@@ -60,6 +60,7 @@ Structured folders for clean, maintainable code.
 
 ## 🗂️ Project Structure
 
+```text
 SCHEDULE_MANAGEMENT/
 │
 ├── abstractclasses/
@@ -85,7 +86,7 @@ SCHEDULE_MANAGEMENT/
 └── main/
     ├── Runner.java
     └── Main.java
-
+```
 
 ---
 
@@ -150,6 +151,7 @@ Time: 07:00 - 10:00
 Room: 402 (Cap: 40)
 
 ✓ Successfully enrolled in schedule: S104a
+
 ⚠ Time conflict! You already have a class on Monday at 07:00 - 10:00
 
 
