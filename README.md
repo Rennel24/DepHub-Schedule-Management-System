@@ -172,16 +172,6 @@ Room: 402 (Cap: 40)
     <th>Role</th>
   </tr>
 
-  <tr>
-    <td align="center">
-      <img src="assets/rayver-pic.png" width="90" style="border-radius: 10px;" />
-    </td>
-    <td>
-      <strong>Rayver Ian De Torres</strong><br/>
-      <a href="https://github.com/USERNAME1">GitHub</a>
-    </td>
-    <td>Project Leader / System Architect</td>
-  </tr>
 
   <tr>
     <td align="center">
@@ -193,6 +183,28 @@ Room: 402 (Cap: 40)
     </td>
     <td>Lead Programmer</td>
   </tr>
+  
+  <tr>
+    <td align="center">
+      <img src="IMAGE_URL_3" width="90" style="border-radius: 10px;" />
+    </td>
+    <td>
+      <strong>Jhon Mhar R. Salapare</strong><br/>
+      <a href="https://github.com/USERNAME3">GitHub</a>
+    </td>
+    <td>Project Leader / System Architect</td>
+  </tr>
+
+ <tr>
+    <td align="center">
+      <img src="assets/rayver-pic.png" width="90" style="border-radius: 10px;" />
+    </td>
+    <td>
+      <strong>Rayver Ian De Torres</strong><br/>
+      <a href="https://github.com/USERNAME1">GitHub</a>
+    </td>
+    <td>Documentation & Presentation Specialist</td>
+  </tr>
 
   <tr>
     <td align="center">
@@ -202,18 +214,7 @@ Room: 402 (Cap: 40)
       <strong>Jessa Soriano</strong><br/>
       <a href="https://github.com/USERNAME3">GitHub</a>
     </td>
-    <td>Feature Developer</td>
-  </tr>
-
-  <tr>
-    <td align="center">
-      <img src="IMAGE_URL_3" width="90" style="border-radius: 10px;" />
-    </td>
-    <td>
-      <strong>Jhon Mhar R. Salapare</strong><br/>
-      <a href="https://github.com/USERNAME3">GitHub</a>
-    </td>
-    <td>Feature Developer</td>
+    <td>Tester</td>
   </tr>
 
 </table>
