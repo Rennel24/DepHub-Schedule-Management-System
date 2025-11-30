@@ -1,4 +1,5 @@
 package model;
+
 import polymorphicclasses.*;
 
 public class Schedule {
@@ -10,10 +11,9 @@ public class Schedule {
     private String day;
     private Time time;
     private Room room;
-    
 
-  public Schedule(String schedID, Program program, String section, Professor prof, String day,
-    Time time, Room room){
+    public Schedule(String schedID, Program program, String section, Professor prof, String day,
+                    Time time, Room room) {
 
         this.schedID = schedID;
         this.program = program;
@@ -22,27 +22,29 @@ public class Schedule {
         this.day = day;
         this.time = time;
         this.room = room;
-  }
+    }
 
-  // Checks if this schedule conflicts with another schedule
-            public boolean conflictsWith(Schedule other) {
-                // Same room?
-                boolean sameRoom = this.room.getRoomName().equalsIgnoreCase(other.getRoom().getRoomName());
+    // Checks if this schedule conflicts with another schedule
+    public boolean conflictsWith(Schedule other) {
+        // Same room?
+        boolean sameRoom = this.room.getRoomName()
+                .equalsIgnoreCase(other.getRoom().getRoomName());
 
-                // Same professor?
-                boolean sameProf = this.professor.getId().equalsIgnoreCase(other.getProfessor().getId());
+        // Same professor?
+        boolean sameProf = this.professor.getId()
+                .equalsIgnoreCase(other.getProfessor().getId());
 
-                // Overlapping time?
-                boolean overlap = this.time.overlapsWith(other.getTime());
+        // Overlapping time?
+        boolean overlap = this.time.overlapsWith(other.getTime());
 
-                boolean sameDay = this.day.equalsIgnoreCase(other.getDay());
+        // Same day?
+        boolean sameDay = this.day.equalsIgnoreCase(other.getDay());
 
-                // Conflict exists if either same room or same professor AND times overlap
-                return sameDay && (sameRoom || sameProf) && overlap;
-        }
+        // Conflict exists if either same room or same professor AND times overlap
+        return sameDay && (sameRoom || sameProf) && overlap;
+    }
 
-
-      public String getSchedID() {
+    public String getSchedID() {
         return schedID;
     }
 
@@ -79,13 +81,12 @@ public class Schedule {
     }
 
     public void setDay(String day) {
-    this.day = day;
-}
-
+        this.day = day;
+    }
 
     public void displayScheduleInfo() {
         System.out.println("Schedule ID: " + schedID);
-        System.out.println("Program: " +  (program != null ? program.getProgramName() : "N/A"));
+        System.out.println("Program: " + (program != null ? program.getProgramName() : "N/A"));
         System.out.println("Section: " + section);
         System.out.println("Professor: " + professor.getName());
         System.out.println("Day: " + day);
@@ -93,9 +94,4 @@ public class Schedule {
         System.out.println("Room: " + room.getRoomName() + " (Capacity: " + room.getCapacity() + ")");
         System.out.println("--------------------------------------------------------------------");
     }
-
-
-
-
-
 }

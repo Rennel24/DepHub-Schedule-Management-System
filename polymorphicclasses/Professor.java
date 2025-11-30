@@ -1,8 +1,7 @@
 package polymorphicclasses;
+
 import java.util.ArrayList;
-
 import model.Schedule;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import abstractclasses.*;
@@ -11,10 +10,9 @@ public class Professor extends Person {
     private ArrayList<Schedule> mySchedules; // Schedules assigned to this professor
     private String password; // For login authentication
 
-
-       public Professor() {
+    public Professor() {
         super("P001", "John Doe", "CICS"); // default ID, name, college
-        this.password = "prof123";          // default password
+        this.password = "prof123";         // default password
         mySchedules = new ArrayList<>();
     }
 
@@ -25,18 +23,15 @@ public class Professor extends Person {
         this.password = "prof123"; // Default password for simplicity
     }
 
-     public Professor(String name) {
+    public Professor(String name) {
         super(name);
         mySchedules = new ArrayList<>();
         this.password = "prof123"; // Default password for simplicity
-     }
-
-
+    }
 
     public boolean authenticate(String id, String password) {
         return getId().equals(id) && this.password.equals(password);
     }
-
 
     // Add a schedule to this professor
     public void addSchedule(Schedule schedule) {
@@ -50,19 +45,19 @@ public class Professor extends Person {
 
     // View professor's own schedules
     public void viewMySchedules() {
-    System.out.println("\n" + getName() + "'s Schedules:");
-    if (mySchedules.isEmpty()) {
-        System.out.println("No schedules assigned yet.");
-        return;
+        System.out.println("\n" + getName() + "'s Schedules:");
+        if (mySchedules.isEmpty()) {
+            System.out.println("No schedules assigned yet.");
+            return;
+        }
+
+        for (Schedule s : mySchedules) {
+            s.displayScheduleInfo();
+            System.out.println("------------------------");
+        }
     }
 
-    for (Schedule s : mySchedules) {
-        s.displayScheduleInfo();
-        System.out.println("------------------------");
-    }
-    }
-
-    //  Print professor's schedules to a text file (like saving to Notepad)
+    // Print professor's schedules to a text file
     public void printMySchedulesToFile() {
         if (mySchedules.isEmpty()) {
             System.out.println("No schedules to print.");
@@ -85,10 +80,10 @@ public class Professor extends Person {
             }
 
             writer.write("\nPrinted by: " + getName() + " (" + getId() + ")\n");
-            System.out.println("✅ Schedule successfully saved to file: " + fileName);
+            System.out.println("Schedule successfully saved to file: " + fileName);
 
         } catch (IOException e) {
-            System.out.println("⚠️ Error while saving schedule: " + e.getMessage());
+            System.out.println("Error while saving schedule: " + e.getMessage());
         }
     }
 

@@ -25,6 +25,11 @@ public abstract class Person {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
     public String getCollege() {
         return college;
     }
@@ -34,9 +39,7 @@ public abstract class Person {
         this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
 
     public void setCollege(String college) {
         this.college = college;
@@ -50,3 +53,5 @@ public abstract class Person {
     // Abstract method (forces subclasses to implement)
     public abstract void roleDescription();
 }
+
+

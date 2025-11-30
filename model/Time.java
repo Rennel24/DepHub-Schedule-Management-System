@@ -35,7 +35,7 @@ public class Time {
 
     // Display time in standard 12-hour format
     public void displayTime() {
-        System.out.println("⏰ " + start.format(formatter12) + " - " + end.format(formatter12));
+        System.out.println(start.format(formatter12) + " - " + end.format(formatter12));
     }
 
     // Optional: Return as string

@@ -41,7 +41,4 @@ public class MenuUI {
         System.out.print("Enter your choice: ");
     }
 
-
-
-
 }
