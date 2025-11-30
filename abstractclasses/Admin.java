@@ -24,31 +24,40 @@ public abstract class Admin extends Person {
     public abstract void manageSchedules();
 
     //  Add a new schedule
-   public void addSchedule(String schedID, Program program, String section, Professor prof,
+           public void addSchedule(String schedID, Program program, String section, Professor prof,
                         String day, Time time, Room room) throws ScheduleConflictException {
 
-    // Create a new schedule object first
-    Schedule newSched = new Schedule(schedID, program, section, prof, day, time, room);
+    // Create a new schedule object
+    Schedule newSchedule = new Schedule(schedID, program, section, prof, day, time, room);
 
-    // Loop through existing schedules to check conflicts
+    // Check for existing schedule ID and conflicts
     for (Schedule s : schedules) {
         if (s.getSchedID().equalsIgnoreCase(schedID)) {
             throw new ScheduleConflictException("Schedule ID already exists: " + schedID);
         }
 
-        // Use the conflictsWith() method to check for room or professor conflicts
-        if (s.conflictsWith(newSched)) {
-            String conflictType = s.getProfessor().equals(prof) ? 
-                                  "Professor " + prof.getName() + " has a conflict with schedule " + s.getSchedID() :
-                                  "Room " + room.getRoomName() + " is already booked at the same time (conflict with schedule " + s.getSchedID() + ")";
-            throw new ScheduleConflictException(conflictType);
+        boolean timeOverlap = s.getDay().equalsIgnoreCase(day) && s.getTime().overlapsWith(time);
+        boolean professorConflict = s.getProfessor().equals(prof) && timeOverlap;
+        boolean roomConflict = s.getRoom().equals(room) && timeOverlap;
+
+        if (professorConflict) {
+            throw new ScheduleConflictException(
+                "Professor " + prof.getName() + " already has a schedule at this time (conflict with Schedule" + s.getSchedID() + ")"
+            );
+        }
+
+        if (roomConflict) {
+            throw new ScheduleConflictException(
+                "Room " + room.getRoomName() + " is already booked at this time (conflict with " + s.getSchedID() + ")"
+            );
         }
     }
 
-    // Add schedule if no conflicts
-    schedules.add(newSched);
-    prof.addSchedule(newSched); // Link schedule to professor
+    // Add the schedule if no conflicts
+    schedules.add(newSchedule);
+    prof.addSchedule(newSchedule); // Link schedule to professor
 }
+
 
 
     //  View all schedules

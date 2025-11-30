@@ -25,24 +25,6 @@ public class Schedule {
     }
 
     // Checks if this schedule conflicts with another schedule
-    public boolean conflictsWith(Schedule other) {
-        // Same room?
-        boolean sameRoom = this.room.getRoomName()
-                .equalsIgnoreCase(other.getRoom().getRoomName());
-
-        // Same professor?
-        boolean sameProf = this.professor.getId()
-                .equalsIgnoreCase(other.getProfessor().getId());
-
-        // Overlapping time?
-        boolean overlap = this.time.overlapsWith(other.getTime());
-
-        // Same day?
-        boolean sameDay = this.day.equalsIgnoreCase(other.getDay());
-
-        // Conflict exists if either same room or same professor AND times overlap
-        return sameDay && (sameRoom || sameProf) && overlap;
-    }
 
     public String getSchedID() {
         return schedID;
