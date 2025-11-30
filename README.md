@@ -44,9 +44,6 @@ Handles incorrect inputs, missing data, and scheduling conflicts
 - **Encapsulation:** Getters, setters, and private attributes  
 
 
-
-
-
 ### 🧭 Menu-Based Navigation  
 Clean console UI for each user role.
 
@@ -125,21 +122,21 @@ java main/Main
 ```
 ---
 
-## 🖥️ Sample Output
+
+### 🖥️ Sample Output
+
+```text
 ========= STUDENT MENU =========
+1. Show Role Description
+2. View All Available Schedules
+3. View Enrolled Schedules
+4. Enroll in a Schedule
+5. Logout
 
-Show Role Description
-
-View All Available Schedules
-
-View Enrolled Schedules
-
-Enroll in a Schedule
-
-Logout
 Enter your choice: 2
 
 All Available Schedules:
+
 Schedule ID: S104a
 Program: Calculus-Based Physics (3 units)
 Section: IT-2101
@@ -147,12 +144,12 @@ Professor: GOMEZ, RICARDO T.
 Day: Monday
 Time: 07:00 - 10:00
 Room: 402 (Cap: 40)
+------------------------------------
 
 ✓ Successfully enrolled in schedule: S104a
 
 ⚠ Time conflict! You already have a class on Monday at 07:00 - 10:00
-
-
+```
 ---
 
 ## 🙏 Acknowledgements
