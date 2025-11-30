@@ -163,8 +163,6 @@ Room: 402 (Cap: 40)
 ---
 
 ## 👥 Authors
-## 👥 Contributors
-
 <table>
   <tr>
     <th>Image</th>
@@ -183,14 +181,14 @@ Room: 402 (Cap: 40)
     </td>
     <td>Lead Programmer</td>
   </tr>
-  
+
   <tr>
     <td align="center">
-      <img src="IMAGE_URL_3" width="90" style="border-radius: 10px;" />
+      <img src="assets/mhar-pic.png" width="90" style="border-radius: 10px;" />
     </td>
     <td>
       <strong>Jhon Mhar R. Salapare</strong><br/>
-      <a href="https://github.com/USERNAME3">GitHub</a>
+      <a href="https://github.com/Mharmar">GitHub</a>
     </td>
     <td>Project Leader / System Architect</td>
   </tr>
@@ -208,7 +206,7 @@ Room: 402 (Cap: 40)
 
   <tr>
     <td align="center">
-      <img src="IMAGE_URL_3" width="90" style="border-radius: 10px;" />
+      <img src="assets/jessa-pic.png" width="90" style="border-radius: 10px;" />
     </td>
     <td>
       <strong>Jessa Soriano</strong><br/>
