@@ -63,28 +63,28 @@ Structured folders for clean, maintainable code.
 SCHEDULE_MANAGEMENT/
 │
 ├── abstractclasses/
-│ ├── Person.java
-│ └── Admin.java
+│   ├── Person.java
+│   └── Admin.java
 │
 ├── polymorphicclasses/
-│ ├── Student.java
-│ └── Professor.java
+│   ├── Student.java
+│   └── Professor.java
 │
 ├── model/
-│ ├── Schedule.java
-│ ├── Program.java
-│ ├── Room.java
-│ └── Time.java
+│   ├── Schedule.java
+│   ├── Program.java
+│   ├── Room.java
+│   └── Time.java
 │
 ├── exceptions/
-│ └── ScheduleConflictException.java
+│   └── ScheduleConflictException.java
 │
 ├── ui/
-│ └── MenuUI.java
+│   └── MenuUI.java
 │
 └── main/
-├── Runner.java
-└── Main.java
+    ├── Runner.java
+    └── Main.java
 
 
 ---
