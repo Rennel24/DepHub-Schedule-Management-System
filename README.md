@@ -1,4 +1,4 @@
-📘 DepHub – Academic Schedule Management System
+# 📘 DepHub – Academic Schedule Management System
 
 Keeping academic records organized, secure, and accessible is a major responsibility in any educational institution. Since student information is highly sensitive, improper handling may lead to data loss, errors, or unauthorized access.
 
@@ -7,6 +7,7 @@ To address these challenges, **DepHub** was developed as a **console-based Java 
 DepHub streamlines tasks for **administrators, professors, and students** while showcasing Object-Oriented Programming (OOP) concepts such as **abstraction, inheritance, encapsulation, and polymorphism**.
 
 ---
+
 
 ## 📌 FEATURES OVERVIEW
 
