@@ -61,7 +61,7 @@ Structured folders for clean, maintainable code.
 ## 🗂️ Project Structure
 
 ```text
-SCHEDULE_MANAGEMENT/
+DEP-HUB-SCHEDULE_MANAGEMENT/
 │
 ├── abstractclasses/
 │   ├── Person.java
@@ -104,27 +104,25 @@ SCHEDULE_MANAGEMENT/
 - **MenuUI** – Displays user interface menus  
 
 ---
+### ▶️ How to Run
 
-## ▶️ How to Run
+```bash
+# 1. Open Terminal or CMD
 
-1. Open Terminal or CMD  
-2. Navigate to project directory:  
-
-
+# 2. Navigate to the project directory
 cd SCHEDULE_MANAGEMENT/src
 
-3. Compile:  
-
-
+# 3. Compile all Java files
 javac main/Main.java
 
-4. Run:  
-
-
+# 4. Run the program
 java main/Main
 
-5. Use the menu to log in as Admin, Professor, or Student.
-
+# 5. Use the menu to log in as:
+#    - Admin
+#    - Professor
+#    - Student
+```
 ---
 
 ## 🖥️ Sample Output
