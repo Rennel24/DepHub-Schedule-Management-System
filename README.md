@@ -177,7 +177,7 @@ Room: 402 (Cap: 40)
       <img src="assets/rayver-pic.png" width="90" style="border-radius: 10px;" />
     </td>
     <td>
-      <strong>Fatima Marie P. Agdon, MSCS</strong><br/>
+      <strong>Rayver Ian De Torres</strong><br/>
       <a href="https://github.com/USERNAME1">GitHub</a>
     </td>
     <td>Project Leader / System Architect</td>
@@ -185,13 +185,13 @@ Room: 402 (Cap: 40)
 
   <tr>
     <td align="center">
-      <img src="IMAGE_URL_2" width="90" style="border-radius: 10px;" />
+      <img src="assets/rennel-pic.png" width="90" style="border-radius: 10px;" />
     </td>
     <td>
-      <strong>Jei Q. Pastrana, MSIT</strong><br/>
-      <a href="https://github.com/USERNAME2">GitHub</a>
+      <strong>Rennel T. Senyahan</strong><br/>
+      <a href="https://github.com/Rennel24">GitHub</a>
     </td>
-    <td>File Handling Specialist</td>
+    <td>Lead Programmer</td>
   </tr>
 
   <tr>
@@ -199,7 +199,18 @@ Room: 402 (Cap: 40)
       <img src="IMAGE_URL_3" width="90" style="border-radius: 10px;" />
     </td>
     <td>
-      <strong>Renz Marrion O. Perez</strong><br/>
+      <strong>Jessa Soriano</strong><br/>
+      <a href="https://github.com/USERNAME3">GitHub</a>
+    </td>
+    <td>Feature Developer</td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="IMAGE_URL_3" width="90" style="border-radius: 10px;" />
+    </td>
+    <td>
+      <strong>Jhon Mhar R. Salapare</strong><br/>
       <a href="https://github.com/USERNAME3">GitHub</a>
     </td>
     <td>Feature Developer</td>
